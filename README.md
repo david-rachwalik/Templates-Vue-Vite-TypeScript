@@ -11,7 +11,7 @@ Template for a [Vue 3](https://v3.vuejs.org) web application.&nbsp; It has suppo
 
 ## Project Setup
 
-### Create Vue Project With Vite
+### [Scaffold Vue Project With Vite](https://vitejs.dev/guide/#scaffolding-your-first-vite-project)
 
 - `npm init vite@latest <project-name> -- --template vue-ts`
 - `cd <project-name>`
