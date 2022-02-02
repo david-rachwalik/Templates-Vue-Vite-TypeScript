@@ -1,28 +1,54 @@
 <!-- <https://v3.vuejs.org/guide/installation.html> -->
 
-# Vue 3 + Vite Application
+# Templates: Vue 3 + Vite + TypeScript
 
-## Terminal Commands
+Template for a [Vue 3](https://v3.vuejs.org) web application.&nbsp; It has support for ESLint, Prettier, Vite, and TypeScript.
 
-### Run Commands
+## Run Commands
 
-- `npm run dev`
+- `npm start`
+- `npm run build`
 
-### Install Commands
+## Project Setup
 
-- `npm i vue@next`
-- `npm i -D @vue/compiler-sfc`
+### Create Vue Project With Vite
 
-Vue projects can quickly be set up with Vite by running the following commands
-
-- `npm init vite@latest <project-name> -- --template vue`
+- `npm init vite@latest <project-name> -- --template vue-ts`
 - `cd <project-name>`
-- `npm i`
 
-#### Vue 3 + Vite Template
+#### Vue 3 + Vite Template/Scaffold
 
-This template should help get you started developing with Vue 3 in Vite.&nbsp; The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Template uses Vue 3 `<script setup>` SFCs ([script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup)).
 
 ##### Recommended IDE Setup
 
-- [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
+> [VSCode](https://code.visualstudio.com) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
+
+##### Packages automatically included by `init vite`
+
+- `npm i vue`
+- `npm i -D vite @vitejs/plugin-vue`
+- `npm i -D typescript vue-tsc`
+
+### Install Project Dependencies
+
+> [Install and configure ESLint, Prettier, and Tailwind CSS using Vite](https://vuejsexamples.com/install-and-configure-eslint-prettier-and-tailwind-css-using-vite)
+
+- `npm i -D eslint`
+  - _.eslintrc.js_: add 'eslint:recommended' to 'extends' ([eslint rules](https://eslint.org/docs/rules))
+- `npm i -D prettier eslint-config-prettier eslint-plugin-prettier`
+- `npm i -D eslint-config-airbnb`
+  - Applies Airbnb's JavaScript styleguide to ESLint
+  - _.eslintrc.js_: add 'airbnb' to 'extends' ([eslint-config-airbnb](https://www.npmjs.com/package/eslint-config-airbnb))
+- `npm i -D eslint-plugin-vue`
+- `npm i -D eslint-plugin-html`
+  - _.eslintrc.js_: add 'html' to 'plugins' ([eslint-plugin-html](https://github.com/BenoitZugmeyer/eslint-plugin-html))
+- `npm i -D typescript @typescript-eslint/eslint-plugin @typescript-eslint/parser`
+
+---
+
+#### Do NOT Use
+
+- `npm i -D typescript @vue/eslint-config-typescript`
+  - `@vue/eslint-config-typescript` is specifically designed for use by `@vue/cli` & `create-vue` setups
+  - _.eslintrc.js_: add 'plugin:vue/vue3-essential' & '@vue/eslint-config-typescript' to 'extends' ([@vue/eslint-config-typescript](https://www.npmjs.com/package/@vue/eslint-config-typescript))
