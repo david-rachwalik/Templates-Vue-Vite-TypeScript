@@ -43,12 +43,21 @@ Template uses Vue 3 `<script setup>` SFCs ([script setup docs](https://v3.vuejs.
 - `npm i -D eslint-plugin-vue`
 - `npm i -D eslint-plugin-html`
   - _.eslintrc.js_: add 'html' to 'plugins' ([eslint-plugin-html](https://github.com/BenoitZugmeyer/eslint-plugin-html))
-- `npm i -D typescript @typescript-eslint/eslint-plugin @typescript-eslint/parser`
+- `npm i -D typescript sass` ([CSS Pre-processors](https://vitejs.dev/guide/features.html#css-pre-processors))
+- `npm i -D @typescript-eslint/eslint-plugin @typescript-eslint/parser`
+- `npm i -D eslint-config-airbnb-typescript`
+
+---
+
+- `npm i -D bootstrap jquery lodash`
+- `npm i -D @types/bootstrap @types/jquery @types/lodash`
+- `npm i -D gh-pages`
 
 ---
 
 #### Do NOT Use
 
+- _package.json_: 'browserslist' not required with Vite ([Production Compatibility](https://vitejs.dev/guide/build.html))
 - `npm i -D typescript @vue/eslint-config-typescript`
   - `@vue/eslint-config-typescript` is specifically designed for use by `@vue/cli` & `create-vue` setups
   - _.eslintrc.js_: add 'plugin:vue/vue3-essential' & '@vue/eslint-config-typescript' to 'extends' ([@vue/eslint-config-typescript](https://www.npmjs.com/package/@vue/eslint-config-typescript))
