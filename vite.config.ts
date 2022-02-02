@@ -5,5 +5,6 @@ import vue from '@vitejs/plugin-vue';
 export default defineConfig({
   plugins: [vue()],
   // Auto launch browser: https://vitejs.dev/config/#server-open
-  server: { open: '/' },
+  //   server: { open: '/' },
+  // instead, currently using VSCode Extension: Vite, by Anthony Fu
 });
